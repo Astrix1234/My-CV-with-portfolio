@@ -99,6 +99,7 @@ textarea.addEventListener('blur', () =>
   )
 );
 
+// eslint-disable-next-line no-unused-vars
 document.addEventListener('DOMContentLoaded', event => {
   form.reset();
 });
