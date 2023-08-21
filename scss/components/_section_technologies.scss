@@ -1,0 +1,27 @@
+.technologies {
+    padding-top: 40px;
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 50px;
+    }
+
+    &__kind {
+        font-size: $fontSizeBiggest;
+        font-weight: bold;
+    }
+
+    &__experience {
+        font-size: $fontSizeSmall;
+    }
+}
+
+@media #{$tabletDesktop} {
+    .technologies {
+        &__list {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px 130px;
+        }
+    }
+}

@@ -1,0 +1,161 @@
+.contact {
+    background-color: getColor("third");
+    padding-bottom: 60px;
+
+    &__whole-container {
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__rings {
+        max-width: 400px;
+        position: absolute;
+        top: 130px;
+        transform: translateX(-50%);
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+    }
+
+    &__title {
+        font-size: $fontSizeTitleSmaller;
+    }
+
+    &__address {
+        font-style: normal;
+        margin-top: 30px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        min-width: 100%;
+        margin: 75px 0 20px 0;
+        position: relative;
+    }
+
+    &__warning-name {
+        position: absolute;
+        right: 0;
+        font-size: $fontSizeSmall;
+        top: 35px;
+    }
+
+    &__warning-email {
+        @extend .contact__warning-name;
+        top: 95px;
+    }
+
+    &__warning-message {
+        @extend .contact__warning-name;
+        top: 295px;
+    }
+
+    &__name {
+        background-color: transparent;
+        color: getColor("secondary");
+        padding: 0 0 8px 0;
+        border: none;
+        outline: none;
+        width: 100%
+    }
+
+    &__email {
+        @extend .contact__name;
+        height: 60px;
+        padding: 24px 0 0 0;
+    }
+
+    &__message {
+        @extend .contact__name;
+        height: 200px;
+        resize: none;
+        padding: 24px 0 0 0;
+    }
+
+    &__btn {
+        display: block;
+        width: 130px;
+        color: getColor("secondary");
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid getColor("fifth");
+        margin-top: 40px;
+        margin-left: auto;
+        transition: $transColor;
+
+        &:hover,
+        &:focus {
+            color: getColor("fifth");
+            cursor: pointer;
+        }
+    }
+
+    &__media {
+        display: flex;
+        justify-content: flex-end;
+        margin: 30px 0 0 0;
+    }
+}
+
+.valid {
+    border-bottom: 1px solid getColor("forth");
+    transition: $transBorder;
+
+    &:hover,
+    &:focus {
+        border-bottom: 1px solid getColor("fifth");
+    }
+}
+
+.invalid {
+    border-bottom: 1px solid getColor("sixth");
+}
+
+.disabled {
+    border-bottom: 1px solid getColor("forth");
+
+    &:hover,
+    &:focus {
+        color: getColor("secondary");
+        cursor: not-allowed;
+    }
+}
+
+.warning-valid {
+    color: transparent;
+}
+
+.warning-invalid {
+    color: getColor("sixth");
+}
+
+@media #{$tabletDesktop} {
+    .contact {
+
+        &__rings {
+            top: 150px;
+        }
+
+        &__container {
+            flex-direction: row;
+            justify-content: space-between;
+            padding-top: 50px;
+        }
+
+        &__address {
+            margin-top: 50px;
+        }
+
+        &__form {
+            max-width: 365px;
+            min-width: 365px;
+            margin: 0 0 20px 0;
+
+        }
+    }
+}

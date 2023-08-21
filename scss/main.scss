@@ -1,0 +1,10 @@
+@use './utils/vars' as*;
+
+@import './components/reset';
+@import './components/global-styles';
+@import './components/header';
+@import './components/section_about-me';
+@import './components/section_technologies';
+@import './components/section_portfolio';
+@import './components/footer';
+@import './components/mobil-menu';

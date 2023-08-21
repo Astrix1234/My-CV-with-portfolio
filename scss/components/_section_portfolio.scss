@@ -1,0 +1,91 @@
+.portfolio {
+    &__container {
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 50px;
+    }
+
+    &__rings {
+        max-width: 400px;
+        position: absolute;
+        transform: translateX(-20%) translateY(20%);
+    }
+
+    &__title {
+        font-size: $fontSizeTitleSmaller;
+        margin: 100px 0 30px 0;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+    }
+
+    &__picture {
+        height: 220px;
+        position: relative;
+
+        &:hover .portfolio__overlay,
+        &:focus .portfolio__overlay {
+            opacity: 1;
+        }
+
+        &:hover .portfolio__view-project,
+        &:focus .portfolio__view-project {
+            opacity: 1;
+        }
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: $gradient-hover;
+        opacity: 0;
+        transition: opacity 0.3s;
+        z-index: 10;
+        transition: $transOpacity;
+    }
+
+    &__view-project {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 15;
+        opacity: 0;
+        transition: $transOpacity;
+    }
+
+    &__view-code {
+        @extend .portfolio__view-project;
+        top: 60%;
+
+        &--this {
+            top: 45%
+        }
+    }
+
+    &__picture-title {
+        margin: 5px 0 5px 0;
+        letter-spacing: 0.1em;
+        font-size: $fontSizeNormal;
+    }
+
+    &__picture-text {
+        font-size: $fontSizeSmall;
+    }
+}
+
+@media #{$tabletDesktop} {
+    .portfolio {
+
+        &__list {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px 15px;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+html {
+  scroll-padding-top: 120px;
+}
+
+body {
+  font-family: $fontFamilyMain;
+  background-color: getColor('primary');
+  color: getColor('secondary');
+}
+
+hr {
+  color: getColor("forth");
+}
+
+.container {
+  max-width: 375px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+@media #{$tabletDesktop} {
+  .container {
+    max-width: 750px;
+    padding: 0 0;
+  }
+}

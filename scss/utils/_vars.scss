@@ -1,0 +1,37 @@
+$colors: (
+  'primary': #151515,
+  'secondary': #FFF,
+  'third': #242424,
+  'forth': #D9D9D9,
+  'fifth': #4EE1A0,
+  "sixth": #FF6F5B
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+
+$gradient-hover: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8));
+$fontFamilyMain: 'Space Grotesk', sans-serif;
+
+
+
+$fontSizeSmall: 12px;
+$fontSizeNormal: 14px;
+$fontSizeBig: 16px;
+$fontSizeBigger: 20px;
+$fontSizeBiggest: 30px;
+$fontSizeTitle: 50px;
+$fontSizeTitleSmaller: 40px;
+
+
+$transBgColor: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transColor: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transBorder: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transFill: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transVisibility: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transOpacity: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transTransform: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+$tabletDesktop: '(min-width: 768px)';
