@@ -10,6 +10,8 @@ const warningMessageMessage = document.querySelector(
   '.contact__warning-message'
 );
 
+form.reset();
+
 const regexName = /^[\p{L}\s]+$/u;
 const regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 const regexTextarea = /^[\p{L}\p{N}\p{P}\p{S}\p{Z}\s]{5,1000}$/u;
@@ -98,8 +100,3 @@ textarea.addEventListener('blur', () =>
     allElementsToValidate
   )
 );
-
-// eslint-disable-next-line no-unused-vars
-document.addEventListener('DOMContentLoaded', event => {
-  form.reset();
-});
