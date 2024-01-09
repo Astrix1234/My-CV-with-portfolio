@@ -42,6 +42,24 @@
         overflow: hidden;
     }
 
+    &__see-more {
+        position: absolute;
+        bottom: 5px;
+        right: 0;
+        background-color: transparent;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        color: getColor("secondary");
+        border: none;
+        transition: $transColor;
+
+        &:hover,
+        &:focus {
+            color: getColor("fifth");
+        }
+    }
+
     &__title {
         letter-spacing: 0.2em;
     }
