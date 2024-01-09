@@ -12,8 +12,13 @@
     }
 
     &__title {
-        font-size: $fontSizeTitleSmaller;
+        font-size: $fontSizeTitle;
         margin: 100px 0 30px 0;
+        letter-spacing: 2px;
+
+        span {
+            animation: colorChange 3000ms ease-in-out infinite alternate both;
+        }
     }
 
     &__list {
@@ -45,9 +50,8 @@
         bottom: 0;
         background-image: $gradient-hover;
         opacity: 0;
-        transition: opacity 0.3s;
         z-index: 10;
-        transition: $transOpacity;
+        transition: opacity 0.6s ease-in-out;
     }
 
     &__view-project {
@@ -57,7 +61,7 @@
         transform: translateX(-50%);
         z-index: 15;
         opacity: 0;
-        transition: $transOpacity;
+        transition: opacity 1s ease-in-out;
     }
 
     &__view-code {
@@ -87,5 +91,15 @@
             grid-template-columns: repeat(2, 1fr);
             gap: 25px 15px;
         }
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: getColor("secondary");
+    }
+
+    100% {
+        color: getColor("fifth");
     }
 }
