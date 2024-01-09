@@ -30,9 +30,16 @@
         border: 3px double getColor("forth");
         padding: 10px;
 
+
         &:last-child {
             margin-bottom: 30px;
         }
+    }
+
+    &__item--short {
+        position: relative;
+        max-height: 70px;
+        overflow: hidden;
     }
 
     &__title {
@@ -43,6 +50,20 @@
         margin: 8px 0 0 0;
         font-size: $fontSizeNormal;
         text-align: justify;
+    }
+
+    &__description--short::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 1.5em;
+        background: linear-gradient(to bottom, rgb(21,
+                    21,
+                    21, 0.2), rgb(21,
+                    21,
+                    21, 0.8) 50%);
     }
 }
 
