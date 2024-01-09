@@ -30,6 +30,12 @@
     &__picture {
         height: 220px;
         position: relative;
+        transition: transform 0.6s ease-in-out;
+
+        &:hover,
+        &:focus {
+            transform: scale(1.05);
+        }
 
         &:hover .portfolio__overlay,
         &:focus .portfolio__overlay {
