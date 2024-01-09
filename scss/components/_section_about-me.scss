@@ -53,6 +53,7 @@
         cursor: pointer;
         color: getColor("secondary");
         border: none;
+        animation: colorChange 3000ms ease-in-out infinite alternate both;
         transition: $transColor;
 
         &:hover,
