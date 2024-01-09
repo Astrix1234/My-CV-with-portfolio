@@ -2,6 +2,7 @@
     padding-top: 180px;
 
     &__list {
+        position: relative;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px 50px;
@@ -10,6 +11,61 @@
     &__kind {
         font-size: $fontSizeBiggest;
         font-weight: bold;
+    }
+
+    &__other {
+        position: absolute;
+        font-weight: bold;
+        font-size: $fontSizeBigger;
+        animation: animation 3000ms ease-in-out infinite alternate both;
+        color: rgb(255, 255, 255, 0.8);
+    }
+
+    &__redux {
+        top: 170px;
+        left: 20px;
+        animation-delay: 1200ms;
+    }
+
+    &__git {
+        top: 50px;
+        left: 110px;
+    }
+
+    &__npm {
+        top: 65px;
+        left: 90px;
+        animation-delay: 700ms;
+    }
+
+    &__rest-api {
+        top: 100px;
+        left: 120px;
+        animation-delay: 2200ms;
+    }
+
+    &__webpack {
+        top: 45px;
+        left: 150px;
+        animation-delay: 2400ms;
+    }
+
+    &__parcel {
+        top: 25px;
+        left: 110px;
+        animation-delay: 3000ms;
+    }
+
+    &__mongo-db {
+        top: 180px;
+        left: 220px;
+        animation-delay: 3500ms;
+    }
+
+    &__express {
+        top: 215px;
+        left: 260px;
+        animation-delay: 3900ms;
     }
 
     &__experience {
@@ -23,5 +79,59 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 30px 130px;
         }
+
+        &__redux {
+            top: 90px;
+            left: 400px;
+        }
+
+        &__git {
+            top: 40px;
+            left: 200px;
+        }
+
+        &__npm {
+            top: 55px;
+            left: 180px;
+        }
+
+        &__rest-api {
+            top: 100px;
+            left: 180px;
+        }
+
+        &__webpack {
+            top: 45px;
+            left: 500px;
+        }
+
+        &__parcel {
+            top: 25px;
+            left: 460px;
+        }
+
+        &__mongo-db {
+            top: 100px;
+            left: 540px;
+        }
+
+        &__express {
+            top: 135px;
+            left: 580px;
+        }
+    }
+}
+
+@keyframes animation {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+
+
+    100% {
+        visibility: visible;
+        opacity: 1;
     }
 }
