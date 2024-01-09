@@ -38,8 +38,9 @@
 
     &__item--short {
         position: relative;
-        max-height: 70px;
+        height: 70px;
         overflow: hidden;
+        transition: height 0.5s ease;
     }
 
     &__see-more {
@@ -83,6 +84,20 @@
                     21,
                     21, 0.8) 50%);
     }
+
+
+}
+
+.expanded .text__description--short::after {
+    display: none;
+}
+
+.expanded .text__see-more {
+    display: none;
+}
+
+.expanded {
+    height: auto;
 }
 
 @media #{$tabletDesktop} {
