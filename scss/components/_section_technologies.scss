@@ -1,16 +1,33 @@
 .technologies {
     padding-top: 180px;
 
+    &__container {
+        position: relative;
+    }
+
     &__list {
         position: relative;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px 50px;
+        margin-bottom: 50px;
     }
 
     &__kind {
         font-size: $fontSizeBiggest;
         font-weight: bold;
+    }
+
+    &__css {
+        text-align: right;
+    }
+
+    &__javascript {
+        text-align: right;
+    }
+
+    &__node {
+        text-align: right;
     }
 
     &__other {
@@ -23,7 +40,7 @@
 
     &__redux {
         top: 170px;
-        left: 20px;
+        left: 60px;
         animation-delay: 1200ms;
     }
 
@@ -77,9 +94,25 @@
             gap: 30px 130px;
         }
 
+        &__css {
+            text-align: center;
+        }
+
+        &__sass {
+            text-align: right;
+        }
+
+        &__react {
+            text-align: center;
+        }
+
+        &__node {
+            text-align: right;
+        }
+
         &__redux {
             top: 90px;
-            left: 400px;
+            left: 430px;
         }
 
         &__git {
@@ -99,22 +132,22 @@
 
         &__webpack {
             top: 45px;
-            left: 500px;
+            left: 520px;
         }
 
         &__parcel {
             top: 25px;
-            left: 460px;
+            left: 480px;
         }
 
         &__mongo-db {
             top: 100px;
-            left: 540px;
+            left: 570px;
         }
 
         &__express {
             top: 135px;
-            left: 580px;
+            left: 610px;
         }
     }
 }
