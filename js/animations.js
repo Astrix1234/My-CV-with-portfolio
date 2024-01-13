@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const windowWidth = window.innerWidth;
 
     if (windowWidth < 768) {
-      const offset = 200;
-      return rect.top < window.innerHeight - offset && rect.top >= 0;
+      const offset = 400;
+      return rect.top < window.innerHeight && rect.top > -offset;
     } else {
       return rect.top >= 0 && rect.bottom <= window.innerHeight;
     }
