@@ -17,13 +17,20 @@ document.addEventListener('DOMContentLoaded', function () {
   const textElement = document.querySelector('.text');
   const shortTextItems = document.querySelectorAll('.text__item--short');
 
-  function isTopEdgeVisible() {
+  function isSectionFullyVisible() {
     const rect = aboutMeSection.getBoundingClientRect();
-    return rect.top < window.innerHeight && rect.top >= 0;
+    const windowWidth = window.innerWidth;
+
+    if (windowWidth < 768) {
+      const offset = 200;
+      return rect.top < window.innerHeight - offset && rect.top >= 0;
+    } else {
+      return rect.top >= 0 && rect.bottom <= window.innerHeight;
+    }
   }
 
   function updateTextVisibility() {
-    if (isTopEdgeVisible()) {
+    if (isSectionFullyVisible()) {
       textElement.classList.add('visible');
     } else {
       textElement.classList.remove('visible');
