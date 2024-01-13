@@ -25,6 +25,42 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 25px;
+
+        & li {
+            animation: flash 2s ease-in-out infinite;
+        }
+
+        & li:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        & li:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+
+        & li:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        & li:nth-child(4) {
+            animation-delay: 0.9s;
+        }
+
+        & li:nth-child(5) {
+            animation-delay: 1.2s;
+        }
+
+        & li:nth-child(6) {
+            animation-delay: 1.5s;
+        }
+
+        & li:nth-child(7) {
+            animation-delay: 1.8s;
+        }
+
+        & li:nth-child(8) {
+            animation-delay: 2.1s;
+        }
     }
 
     &__picture {
@@ -90,6 +126,7 @@
     }
 }
 
+
 @media #{$tabletDesktop} {
     .portfolio {
 
@@ -107,5 +144,17 @@
 
     100% {
         color: getColor("fifth");
+    }
+}
+
+@keyframes flash {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
     }
 }

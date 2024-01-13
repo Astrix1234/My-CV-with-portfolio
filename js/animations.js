@@ -11,3 +11,29 @@ document.querySelectorAll('.text__see-more').forEach(button => {
     this.parentElement.classList.toggle('expanded');
   });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  const aboutMeSection = document.getElementById('about');
+  const textElement = document.querySelector('.text');
+  const shortTextItems = document.querySelectorAll('.text__item--short');
+
+  function isSectionFullyVisible() {
+    const rect = aboutMeSection.getBoundingClientRect();
+    return rect.top >= 0 && rect.bottom <= window.innerHeight;
+  }
+
+  function updateTextVisibility() {
+    if (isSectionFullyVisible()) {
+      textElement.classList.add('visible');
+    } else {
+      textElement.classList.remove('visible');
+      shortTextItems.forEach(item => {
+        item.classList.remove('expanded');
+      });
+    }
+  }
+
+  window.addEventListener('scroll', updateTextVisibility);
+
+  updateTextVisibility();
+});

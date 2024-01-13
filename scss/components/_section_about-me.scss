@@ -17,12 +17,22 @@
         font-size: $fontSizeTitle;
         margin: 80px 0 0 0;
     }
+
+    &__container-text {
+        height: 100%;
+        min-height: 558px;
+        position: relative;
+        overflow: auto;
+    }
 }
 
 .text {
     display: flex;
     flex-direction: column;
-
+    position: absolute;
+    width: 100%;
+    transform: translateY(-100%);
+    transition: transform 1.5s ease-in-out;
 
     &__item {
         margin: 30px 0 0 0;
@@ -85,8 +95,10 @@
                     21,
                     21, 0.8) 50%);
     }
+}
 
-
+.text.visible {
+    transform: translateY(0);
 }
 
 .expanded .text__description--short::after {
@@ -102,6 +114,14 @@
 }
 
 @media #{$tabletDesktop} {
+    .about-me {
+        &__container-text {
+            height: 100%;
+            min-height: 478px;
+
+        }
+    }
+
     .text {
         &__item {
             max-width: 550px;
