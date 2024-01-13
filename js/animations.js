@@ -17,13 +17,13 @@ document.addEventListener('DOMContentLoaded', function () {
   const textElement = document.querySelector('.text');
   const shortTextItems = document.querySelectorAll('.text__item--short');
 
-  function isSectionFullyVisible() {
+  function isTopEdgeVisible() {
     const rect = aboutMeSection.getBoundingClientRect();
-    return rect.top >= 0 && rect.bottom <= window.innerHeight;
+    return rect.top < window.innerHeight && rect.top >= 0;
   }
 
   function updateTextVisibility() {
-    if (isSectionFullyVisible()) {
+    if (isTopEdgeVisible()) {
       textElement.classList.add('visible');
     } else {
       textElement.classList.remove('visible');
