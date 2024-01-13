@@ -1,6 +1,6 @@
 # My CV and portfolio
 
-![Desktop preview](desktop-preview.jpg)
+![Desktop preview](desktop-preview.png)
 
 ## Developed with
 
