@@ -103,6 +103,12 @@
         animation-delay: 4800ms;
     }
 
+    &__scrum {
+        top: 45px;
+        left: 35px;
+        animation-delay: 5100ms;
+    }
+
 }
 
 @media #{$tabletDesktop} {
@@ -181,6 +187,11 @@
         &__firebase {
             top: 60px;
             left: 200px;
+        }
+
+        &__scrum {
+            top: 10px;
+            left: 180px;
         }
     }
 }
