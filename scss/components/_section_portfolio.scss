@@ -143,6 +143,16 @@
     }
 }
 
+@media #{$desktop} {
+    .portfolio {
+
+        &__list {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px 15px;
+        }
+    }
+}
+
 @keyframes colorChange {
     0% {
         color: getColor("secondary");

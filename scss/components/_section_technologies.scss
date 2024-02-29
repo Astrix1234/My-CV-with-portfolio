@@ -118,12 +118,20 @@
             gap: 30px 130px;
         }
 
+        &__html {
+            text-align: left;
+        }
+
         &__css {
             text-align: center;
         }
 
         &__sass {
             text-align: right;
+        }
+
+        &__javascript {
+            text-align: left;
         }
 
         &__react {
@@ -192,6 +200,99 @@
         &__scrum {
             top: 10px;
             left: 180px;
+        }
+    }
+}
+
+@media #{$desktop} {
+    .technologies {
+        &__list {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px 130px;
+        }
+
+        &__html {
+            text-align: left;
+        }
+
+        &__css {
+            text-align: center;
+        }
+
+        &__sass {
+            text-align: right;
+        }
+
+        &__javascript {
+            text-align: left;
+        }
+
+        &__react {
+            text-align: center;
+        }
+
+        &__node {
+            text-align: right;
+        }
+
+        &__redux {
+            top: 95px;
+            left: 500px;
+        }
+
+        &__git {
+            top: 5px;
+            left: 780px;
+        }
+
+        &__npm {
+            top: 25px;
+            left: 760px;
+        }
+
+        &__rest-api {
+            top: 100px;
+            left: 180px;
+        }
+
+        &__webpack {
+            top: 45px;
+            left: 920px;
+        }
+
+        &__parcel {
+            top: 20px;
+            left: 880px;
+        }
+
+        &__mongo-db {
+            top: 80px;
+            left: 950px;
+        }
+
+        &__express {
+            top: 115px;
+            left: 1010px;
+        }
+
+        &__typescript {
+            top: 37px;
+            left: 130px;
+        }
+
+        &__reactNative {
+            top: 45px;
+            left: 400px;
+        }
+
+        &__firebase {
+            top: 60px;
+            left: 770px;
+        }
+
+        &__scrum {
+            top: 10px;
+            left: 280px;
         }
     }
 }

@@ -44,49 +44,53 @@
               </svg></a></li>
         </ul>
       </div>
-      <hr class="header__line">
+    </div>
+    <hr class="header__line">
+    <div class="container">
       <menu class="navigation">
         <li><a class="underline" href="#technologies">Technologies</a></li>
         <li><a class="underline" href="#portfolio">Projects</a></li>
         <li><a class="underline" href="#about">About me</a></li>
         <li><a class="underline" href="#contact">Contact</a></li>
       </menu>
-      <hr>
-      <hr>
-      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-        <svg class="menu-toggle__icon" width="24" height="16">
-          <use href="images/menu.svg#icon-menu"></use>
+    </div>
+    <hr>
+    <hr>
+    <div class="container"></div>
+    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg class="menu-toggle__icon" width="24" height="16">
+        <use href="images/menu.svg#icon-menu"></use>
+      </svg>
+    </button>
+    <div class="mobil-menu js-menu-container" id="mobile-menu">
+      <button class="mobil-menu__menu-toggle js-close-menu">
+        <svg class="mobil-menu__menu-toggle-icon" width="18.67" height="18.67">
+          <use href="images/clouse.svg#icon-close"></use>
         </svg>
       </button>
-      <div class="mobil-menu js-menu-container" id="mobile-menu">
-        <button class="mobil-menu__menu-toggle js-close-menu">
-          <svg class="mobil-menu__menu-toggle-icon" width="18.67" height="18.67">
-            <use href="images/clouse.svg#icon-close"></use>
-          </svg>
-        </button>
-        <menu class="mobile-nav">
-          <li>
-            <a class="mobile-nav__link" href="#technologies">Technologies</a>
-          </li>
-          <li>
-            <a class="mobile-nav__link" href="#portfolio">Projects</a>
-          <li>
-            <a class="mobile-nav__link" href="#about">About me</a>
-          </li>
-          </li>
-          <li>
-            <a class="mobile-nav__link" href="#contact">Contact</a>
-          </li>
-        </menu>
-
-      </div>
+      <menu class="mobile-nav">
+        <li>
+          <a class="mobile-nav__link" href="#technologies">Technologies</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#portfolio">Projects</a>
+        <li>
+          <a class="mobile-nav__link" href="#about">About me</a>
+        </li>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#contact">Contact</a>
+        </li>
+      </menu>
+    </div>
+    </div>
   </header>
 
   <section class="technologies" id="technologies">
     <div class="container technologies__container">
       <ul class="technologies__list">
         <li class="technologies__item">
-          <p class="technologies__kind">HTML</p>
+          <p class="technologies__kind technologies__html">HTML</p>
         </li>
         <li>
           <p class="technologies__kind technologies__css">CSS</p>
@@ -357,7 +361,9 @@
           <p class="contact__warning-message warning-valid">Please fill in the correct format</p>
         </form>
       </div>
-      <hr>
+    </div>
+    <hr>
+    <div class="container">
       <div class="contact__media">
         <ul class="media">
           <li class="media__item"><a class="media__link" href="https://github.com/Astrix1234?tab=repositories"

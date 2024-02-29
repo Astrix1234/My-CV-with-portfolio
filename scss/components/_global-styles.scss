@@ -9,7 +9,7 @@ body {
 }
 
 hr {
-  color: getColor("forth");
+  color: #5b5b5b
 }
 
 .container {
@@ -22,6 +22,13 @@ hr {
 @media #{$tabletDesktop} {
   .container {
     max-width: 750px;
+    padding: 0 0;
+  }
+}
+
+@media #{$desktop} {
+  .container {
+    max-width: 1180px;
     padding: 0 0;
   }
 }
