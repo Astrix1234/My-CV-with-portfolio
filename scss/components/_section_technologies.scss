@@ -103,6 +103,12 @@
         animation-delay: 4800ms;
     }
 
+    &__azure {
+        top: 130px;
+        left: 170px;
+        animation-delay: 5400ms;
+    }
+
     &__scrum {
         top: 45px;
         left: 35px;
@@ -197,6 +203,11 @@
             left: 200px;
         }
 
+        &__azure {
+            top: 95px;
+            left: 300px;
+        }
+
         &__scrum {
             top: 10px;
             left: 180px;
@@ -288,6 +299,11 @@
         &__firebase {
             top: 60px;
             left: 770px;
+        }
+
+        &__azure {
+            top: 100px;
+            left: 670px;
         }
 
         &__scrum {
