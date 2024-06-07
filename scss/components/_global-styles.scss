@@ -9,7 +9,7 @@ body {
 }
 
 hr {
-  color: #5b5b5b
+  color: getColor('secondary');
 }
 
 .container {
