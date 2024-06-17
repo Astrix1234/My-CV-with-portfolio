@@ -40,7 +40,7 @@
 
     &__redux {
         top: 170px;
-        left: 60px;
+        left: 80px;
         animation-delay: 1200ms;
     }
 
@@ -113,6 +113,12 @@
         top: 45px;
         left: 35px;
         animation-delay: 5100ms;
+    }
+
+    &__next {
+        top: 160px;
+        left: 20px;
+        animation-delay: 5400ms;
     }
 
 }
@@ -212,6 +218,11 @@
             top: 10px;
             left: 180px;
         }
+
+        &__next {
+            top: 100px;
+            left: 370px;
+        }
     }
 }
 
@@ -309,6 +320,11 @@
         &__scrum {
             top: 10px;
             left: 280px;
+        }
+
+        &__next {
+            top: 80px;
+            left: 370px;
         }
     }
 }
